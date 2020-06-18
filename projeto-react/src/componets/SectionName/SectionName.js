@@ -17,8 +17,9 @@ import React from 'react';
 // }
 
 class SectionNome extends React.Component {
-    //inicializa os valores da nossa classe
+    //inicializa os valores da nossa classe, o construtor é padrão do JS no uso das classes. Inicia as variáveis aqui detreeo do super
     constructor() {
+        // o super traz tudo que o constructor tem, 
         super();
         // é um objeto q aceita várias propriedades: string, numero, function,array. é onde guardamos as variaveis que desejamos atualizar
         this.state = {
