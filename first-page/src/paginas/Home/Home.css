@@ -1,0 +1,10 @@
+*{text-align: center;}
+.titulo {
+    color: #995555;
+    padding: 15px;
+    background: rgb(167, 162, 162);
+}
+
+.img {
+    width: 400px;
+}
