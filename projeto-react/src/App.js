@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import SectionFood from './componets/SectionFood/SectionFood';
+import Contador from './componets/Contador/Contador'
 
 
 function App() {
   return (
     <div>
-        <SectionFood />
+       <Contador />
+
     </div>
   );
 }

@@ -8,7 +8,8 @@ class SectionFood extends React.Component {
     constructor() {
         super()
         this.state = {
-            imagemFood: combo
+            imagemFood: combo,
+            visivel: false
         }
     }
 
@@ -30,7 +31,8 @@ class SectionFood extends React.Component {
                 }
                     }>Hamburguer</button>
               </div>
-          </div>  
+          </div> 
+          
         )
     }
 
