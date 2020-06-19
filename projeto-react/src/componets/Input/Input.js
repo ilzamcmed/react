@@ -4,7 +4,7 @@ import React from 'react';
 function Input(props) {
     return (
         <>
-        <input type={props.tipoDoInput}></input>
+        <input type={props.tipo} onChange={props.change}></input>
         </>
     )
 }

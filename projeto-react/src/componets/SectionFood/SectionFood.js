@@ -32,9 +32,11 @@ class SectionFood extends React.Component {
               <img src= {this.state.imagemFood} alt="foto "></img>
               
               <div>
-                <Button click={this.mostraSushi} texto="Sushi"/>
+                <Button 
+                click={this.mostraSushi} texto="Sushi" />
 
-                <Button click={this.mostraBurguer} texto="Hamburguer" />
+                <Button 
+                click={this.mostraBurguer} texto="Hamburguer" />
                 </div>
           </div> 
           
