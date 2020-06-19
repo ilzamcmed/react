@@ -1,7 +1,9 @@
 import React from 'react';
+import Button from '../Button/Button'
 import sushi from '../../img/sushi.jpeg';
 import burguer from '../../img/hamburguer.jpeg';
 import combo from '../../img/combo.jpg'
+
 
 
 class SectionFood extends React.Component {
@@ -13,24 +15,27 @@ class SectionFood extends React.Component {
         }
     }
 
+    mostraBurguer = () =>{
+        this.setState({imagemFood:burguer})
+    }
+
+    mostraSushi = () => {
+        this.setState({imagemFood:sushi})
+    }
     
 
     render() {
 
         return(
           <div>
+              <p>Qual escolher?</p>
               <img src= {this.state.imagemFood} alt="foto "></img>
+              
               <div>
-                <button onClick={() => {
-                    this.setState({imagemFood:sushi})
-                }
-                    }>Sushi</button>
+                <Button click={this.mostraSushi} texto="Sushi"/>
 
-                <button onClick={() => {
-                    this.setState({imagemFood:burguer})
-                }
-                    }>Hamburguer</button>
-              </div>
+                <Button click={this.mostraBurguer} texto="Hamburguer" />
+                </div>
           </div> 
           
         )
