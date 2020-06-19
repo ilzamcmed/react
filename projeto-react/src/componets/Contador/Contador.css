@@ -5,21 +5,6 @@
     margin: 25px;
 }
 
-.btn_negativo, .btn_positivo {
-    padding: 20px;
-    margin:50px ;
-    color: #3d3d3d;
-    font-size: 20px;
-}
-
-.btn_negativo {
-    background-color: #da1b15;
-}
-
-.btn_positivo {
-    background-color: #dacd15;
-}
-
 .numero {
     font-size: 28px;
     color: #2548;

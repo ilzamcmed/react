@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Button from '../Button/Button';
+
+
 import './Contador.css'
 
 class Contador extends Component {
@@ -30,10 +33,28 @@ class Contador extends Component {
     render() {
         return (
             <div className="box">
-                <button className="btn_negativo" onClick={this.diminuirContador}> - </button>
+                {/* Sem usar props */}
+                {/* <button className="btn_negativo" onClick={this.diminuirContador}> - </button> */}
+                {/* <button className="btn_positivo" onClick={this.aumentarContador}> + </button> */}
+
+
+
+                {/* Exporta o botão do componente e usa o props para adicionar valores*/}
+                <Button 
+                texto=" - " 
+                classe="btn_negativo" 
+                click={this.diminuirContador}
+                />
+
                 <p className="numero"> { this.state.contador } </p>
-                <button className="btn_positivo" onClick={this.aumentarContador}> + </button>
-                
+
+                <Button 
+                texto=" + " 
+                classe="btn_positivo" 
+                click={this.aumentarContador} 
+                />
+
+
                 <button className="btn_reset" onClick={this.resetContador}>Resetar</button>
                 
             </div>
