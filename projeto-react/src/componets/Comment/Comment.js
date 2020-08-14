@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Input from '../Input/Input';
-import Button from '../Button/Button';
+// import Button from '../Button/Button';
 
 
 class Comment extends Component {
@@ -13,7 +13,6 @@ class Comment extends Component {
 
     addComment = (event) => {
         this.setState({
-
             texto: event.target.value
         })
         

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Contador from './componets/Contador/Contador'
 import SectionFood from './componets/SectionFood/SectionFood'
